@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form class="form">
+    <header class="formHeader"> Booking Form </header>
+    <br />
+    <section>
+      <header class="sectionHeader">Details of Preferred Apartment</header>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Quotation Number:</td><td>Q-0213</td>
+              <td>Typology:</td><td>1BHK</td>
+              <td>Carpet Area:</td><td>494.82</td>
+            </tr>
+            <tr>
+          <td>Unit Number:</td><td>1807</td>
+          <td>Agreement Value:</td><td>4478712.87</td>
+          <td>Project:</td><td>Florrenza</td>
+        </tr>
+        <tr>
+          <td>Configuration</td><td>1 BHK</td>
+          <td>Floor:</td><td>18</td>
+          <td>Tower:</td><td>Wing - A</td>
+        </tr>
+        <tr>
+          <td>*Booking Date:</td>
+          <td><input type="date" />
+            <p>[<span class="dateP">20/09/2022</span>]</p></td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <header class="sectionHeader">Funding Details</header>
+      <div>
+        <table>
+          <tbody>
+            <tr>
+          <td>Mode of Funding :<td><select class="fundSelect">
+            <option value="none" disabled selected>--None--</option>
+            <option value="NEFT">NEFT</option>
+            <option value="UPI">UPI</option>
+            <option value="RTGS">RTGS</option>
+          </select></td></td>
+      <td>Loan Bank:<td><select class="bankSelect">
+            <option value="none" disabled selected>--None--</option>
+            <option value="HDFC">HDFC</option>
+            <option value="CBI">CBI</option>
+            <option value="SBI">SBI</option>
+          </select></td></td>
+      <td>Loan Amount:<td><input type='text' class="amountInput" /></td></td>
+    </tr>
+    </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <header class="sectionHeader">Add Applicant Details</header>
+      <div class="addApp">
+        <div class="addApplicant">
+          Applicant 1
+        </div><button class="addApplicantBtn">+</button>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>Applicant Salutation :</td>
+            <td><select>
+              <option value="none" disabled selected>--None--</option>
+            </select></td>
+            <td>Applicant Name:</td><td><input type='text' /></td>
+
+            <td>Applicant Number:</td><td><select>
+              <option value="none" disabled selected>--None--</option>
+            </select></td>
+          </tr>
+
+          <tr>
+            <td>Type of Applicant :</td><td><select>
+              <option value="none" disabled selected>--None--</option>
+            </select></td>
+  
+        <td>Current Address:</td><td>
+          <textarea></textarea>
+        </td>
+  
+        <td>Permanent Address:</td><td>
+          <textarea></textarea>
+        </td>
+          </tr>
+      <tr>
+        <td>City:</td><td>
+          <input type='text' />
+        </td>
+
+      <td>State:</td><td>
+        <input type='text' />
+      </td>
+
+      <td>Country:</td><td>
+        <input type='text' />
+      </td>
+      </tr>
+      
+<tr>
+  <td>Mobile No. :</td><td>
+    <input type='number' />
+  </td>
+
+<td>Landline No. :</td><td>
+  <input type='number' />
+</td>
+
+<td>PIN :</td><td>
+  <input type='number' />
+</td>
+
+</tr>
+   <tr>
+    <td>Date of Birth :<td>
+      <input type='date' />
+    </td></td>
+
+  <td>Residential Status:<td><select>
+        <option value="none" disabled selected>--None--</option>
+      </select></td></td>
+
+  <td>Email :<td>
+      <input type='email' />
+    </td></td>
+
+   </tr>
+  <tr>
+    <td>Pan Details:<td>
+      <input type='text' />
+    </td></td>
+
+  <td>Aadhar Details:<td>
+      <input type='text' />
+    </td></td>
+  </tr>
+    </div>
+        </table>
+        
+    </section>
+    <section>
+      <header class="sectionHeader">Payment Details</header>
+      <div class=>
+        <table>
+          <thead>
+            <tr>
+              <td>Payment Mode:</td>
+              <td>Receipt Type:</td>
+              <td>Payment Type:</td>
+              <td>Transaction Status:</td>
+              <td>Date:</td>
+              <td>Amount:</td>
+              <td>Chq No/UTR/TID/APPR CODE:</td>
+              <td>Drawn on (Bank Name)</td>
+              <td>Drawn on (Branch Name)</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <select>
+                <option value="none" disabled selected>--None--</option>
+              </select>
+            </td>
+            <td>
+              <select disabled>
+                <option value="none" disabled selected>--None--</option>
+              </select>
+            </td>
+            <td>
+              <select>
+              <option value="none" disabled selected>--None--</option>
+            </select>
+            </td>
+            <td>
+            <input type="text" />
+            </td>
+            <td>
+            <input type="date" />
+            <p>[<span class="dateP">20/09/2022</span>]</p>
+            </td>
+            <td>
+            <input type='text' />
+            </td>
+            <td>
+            <input type='text' />
+            </td>
+            <td>
+              <select>
+                <option value="none" disabled selected>--None--</option>
+              </select>
+            </td>
+            <td>
+              <input type='text' />
+            </td>
+            <td>
+              <button>+</button>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+       
+    </section>
+    <div class="saveBtn">
+      <button>Save</button>
+    </div>
+  </form>
+</body>
+
+</html>
