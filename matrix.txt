@@ -1,0 +1,26 @@
+let matrix = [[0,0,1],
+              [0,0,0],
+              [0,0,0]];
+
+let position = matrix.reduce((acc,crr,idx)=>{
+  if(crr.includes(1)){
+    acc.push([idx,crr.indexOf(1)]);
+  }
+  return acc
+},[]);
+
+console.log(position);
+let r,c;
+ let result = matrix.map((crr,idx)=>{
+      if(position[idx]){
+        [r,c] = position[idx];
+      }
+   if(idx == r){
+     crr.map((item,idx)=>crr[idx] =1);
+   }else{
+      crr[c]=1;                    
+   }
+   return crr;
+ })
+ 
+ console.log(result);
